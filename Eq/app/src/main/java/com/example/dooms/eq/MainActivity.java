@@ -222,7 +222,7 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         mSeekbar_5.incrementProgressBy(1);
     }
 
-//    ===================================================================================
+    //    ===================================================================================
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromTouch) {
         switch(seekBar.getId()){
             case R.id.seekBar_1:
@@ -305,3 +305,4 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         }
     }
 }
+
