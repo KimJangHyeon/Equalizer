@@ -14,7 +14,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
     private SeekBar mSeekbar_1;
     private SeekBar mSeekbar_2;
     private SeekBar mSeekbar_3;
@@ -107,101 +107,12 @@ public class MainActivity extends AppCompatActivity {
         mBandInfo_4.setText(String.valueOf(String.valueOf(mEqualizer.getBandFreqRange((short) 3)[0]) + " ~ " +   String.valueOf(mEqualizer.getBandFreqRange((short) 3)[1])));
         mBandInfo_5.setText(String.valueOf(String.valueOf(mEqualizer.getBandFreqRange((short) 4)[0]) + " ~ " +   String.valueOf(mEqualizer.getBandFreqRange((short) 4)[1])));
 
-
-        mSeekbar_1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                mEqualizer.setBandLevel((short) 0, (short) (progress - 1500));
-                mBandVal_1.setText(String.valueOf(mEqualizer.getBandLevel((short) 0)));
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-        mSeekbar_2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                mBandVal_2.setText(String.valueOf(mEqualizer.getBandLevel((short) 1)));
-                mEqualizer.setBandLevel((short) 1, (short) (progress - 1500));
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-        mSeekbar_3.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                mEqualizer.setBandLevel((short) 2, (short) (progress - 1500));
-                mBandVal_3.setText(String.valueOf(mEqualizer.getBandLevel((short) 2)));
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-        mSeekbar_4.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                mEqualizer.setBandLevel((short) 3, (short) (progress - 1500));
-                mBandVal_4.setText(String.valueOf(mEqualizer.getBandLevel((short) 3)));
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-        mSeekbar_5.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                mEqualizer.setBandLevel((short) 4, (short) (progress - 1500));
-                mBandVal_5.setText(String.valueOf(mEqualizer.getBandLevel((short) 4)));
-
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-
-
-//        mSeekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+//===============================================================================================
+//        mSeekbar_1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 //            @Override
 //            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-//                mSeekBarVal = progress;
-////                mEqualizer.setBandLevel((short) 0, (short) mSeekBarVal);
-//                mTextView.setText(String.valueOf(mSeekBarVal));
+//                mEqualizer.setBandLevel((short) 0, (short) (progress - 1500));
+//                mBandVal_1.setText(String.valueOf(mEqualizer.getBandLevel((short) 0)));
 //            }
 //
 //            @Override
@@ -214,6 +125,95 @@ public class MainActivity extends AppCompatActivity {
 //
 //            }
 //        });
+//        mSeekbar_2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+//            @Override
+//            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+//                mBandVal_2.setText(String.valueOf(mEqualizer.getBandLevel((short) 1)));
+//                mEqualizer.setBandLevel((short) 1, (short) (progress - 1500));
+//            }
+//
+//            @Override
+//            public void onStartTrackingTouch(SeekBar seekBar) {
+//
+//            }
+//
+//            @Override
+//            public void onStopTrackingTouch(SeekBar seekBar) {
+//
+//            }
+//        });
+//        mSeekbar_3.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+//            @Override
+//            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+//                mEqualizer.setBandLevel((short) 2, (short) (progress - 1500));
+//                mBandVal_3.setText(String.valueOf(mEqualizer.getBandLevel((short) 2)));
+//            }
+//
+//            @Override
+//            public void onStartTrackingTouch(SeekBar seekBar) {
+//
+//            }
+//
+//            @Override
+//            public void onStopTrackingTouch(SeekBar seekBar) {
+//
+//            }
+//        });
+//        mSeekbar_4.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+//            @Override
+//            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+//                mEqualizer.setBandLevel((short) 3, (short) (progress - 1500));
+//                mBandVal_4.setText(String.valueOf(mEqualizer.getBandLevel((short) 3)));
+//            }
+//
+//            @Override
+//            public void onStartTrackingTouch(SeekBar seekBar) {
+//
+//            }
+//
+//            @Override
+//            public void onStopTrackingTouch(SeekBar seekBar) {
+//
+//            }
+//        });
+//        mSeekbar_5.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+//            @Override
+//            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+//                mEqualizer.setBandLevel((short) 4, (short) (progress - 1500));
+//                mBandVal_5.setText(String.valueOf(mEqualizer.getBandLevel((short) 4)));
+//
+//            }
+//
+//            @Override
+//            public void onStartTrackingTouch(SeekBar seekBar) {
+//
+//            }
+//
+//            @Override
+//            public void onStopTrackingTouch(SeekBar seekBar) {
+//
+//            }
+//        });
+//
+//
+////        mSeekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+////            @Override
+////            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+////                mSeekBarVal = progress;
+//////                mEqualizer.setBandLevel((short) 0, (short) mSeekBarVal);
+////                mTextView.setText(String.valueOf(mSeekBarVal));
+////            }
+////
+////            @Override
+////            public void onStartTrackingTouch(SeekBar seekBar) {
+////
+////            }
+////
+////            @Override
+////            public void onStopTrackingTouch(SeekBar seekBar) {
+////
+////            }
+////        });
 
         mSeekbar_1.incrementProgressBy(1);
         mSeekbar_2.incrementProgressBy(1);
@@ -221,6 +221,43 @@ public class MainActivity extends AppCompatActivity {
         mSeekbar_4.incrementProgressBy(1);
         mSeekbar_5.incrementProgressBy(1);
     }
+
+//    ===================================================================================
+    public void onProgressChanged(SeekBar seekBar, int progress, boolean fromTouch) {
+        switch(seekBar.getId()){
+            case R.id.seekBar_1:
+                mEqualizer.setBandLevel((short) 0, (short) (progress - 1500));
+                mBandVal_1.setText(String.valueOf(mEqualizer.getBandLevel((short) 0)));
+                break;
+            case R.id.seekBar_2:
+                mEqualizer.setBandLevel((short) 1, (short) (progress - 1500));
+                mBandVal_2.setText(String.valueOf(mEqualizer.getBandLevel((short) 1)));
+                break;
+            case R.id.seekBar_3:
+                mEqualizer.setBandLevel((short) 2, (short) (progress - 1500));
+                mBandVal_3.setText(String.valueOf(mEqualizer.getBandLevel((short) 2)));
+                break;
+            case R.id.seekBar_4:
+                mEqualizer.setBandLevel((short) 3, (short) (progress - 1500));
+                mBandVal_4.setText(String.valueOf(mEqualizer.getBandLevel((short) 3)));
+                break;
+            case R.id.seekBar_5:
+                mEqualizer.setBandLevel((short) 4, (short) (progress - 1500));
+                mBandVal_5.setText(String.valueOf(mEqualizer.getBandLevel((short) 4)));
+                break;
+
+
+        }
+    }
+
+    public void onStartTrackingTouch(SeekBar seekBar) {
+    }
+
+    public void onStopTrackingTouch(SeekBar seekBar) {
+    }
+
+
+
     private void playAudio(String url) throws Exception{
         killMediaPlayer();
 
