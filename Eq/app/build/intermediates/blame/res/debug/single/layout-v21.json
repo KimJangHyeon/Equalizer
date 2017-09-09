@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Project\\Android\\Equalize\\Equalizer\\Eq\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\c37c7b353d4102f9cb60da2770cdd0292357e91e\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\Project\\Android\\Equalize\\Equalizer\\Eq\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\c37c7b353d4102f9cb60da2770cdd0292357e91e\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\Project\\Android\\Equalize\\Equalizer\\Eq\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\c37c7b353d4102f9cb60da2770cdd0292357e91e\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\Project\\Android\\Equalize\\Equalizer\\Eq\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Owner\\.android\\build-cache\\c37c7b353d4102f9cb60da2770cdd0292357e91e\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Project\\Android\\Equalize\\Equalizer\\Eq\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
+        "source": "D:\\Project\\Android\\Equalize\\Equalizer\\Eq\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Project\\Android\\Equalize\\Equalizer\\Eq\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "D:\\Project\\Android\\Equalize\\Equalizer\\Eq\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    }
+]

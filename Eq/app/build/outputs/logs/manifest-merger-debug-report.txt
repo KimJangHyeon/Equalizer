@@ -1,0 +1,99 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:4:5-80
+	android:name
+		ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:4:22-78
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:5:5-71
+	android:name
+		ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:5:22-68
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:6:22-77
+application
+ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:8:5-22:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Owner\.android\build-cache\c37c7b353d4102f9cb60da2770cdd0292357e91e\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Owner\.android\build-cache\fa612f3fa92c838552c49d23c39fbe6ee6fd692b\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Owner\.android\build-cache\22ffe0111c4520c80a4c3c9827f37ae2440f8880\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Owner\.android\build-cache\ad697fcdf4add01159e5785657c67d45b42f2e82\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Owner\.android\build-cache\74596b10de929628047dd7c7b47520d91f2ce1ee\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Owner\.android\build-cache\16f48d8e0f4c208acc3f98524f37c9087aec8451\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Owner\.android\build-cache\c07399c933b1e238f20c841c3eefa6c5d799d3b4\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Owner\.android\build-cache\4053e1a18524ff1eeade8b6b14d40604934a205f\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Owner\.android\build-cache\46123b74f284e6cb55067c7be119664eae1a2f2b\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Owner\.android\build-cache\37d17a2090f43e72126add8b5ee2c8efc963032b\output\AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:11:9-41
+	android:supportsRtl
+		ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:13:9-35
+	android:roundIcon
+		ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:12:9-54
+	android:allowBackup
+		ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:9:9-35
+	android:icon
+		ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:10:9-43
+	android:theme
+		ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:14:9-40
+activity#com.example.dooms.eq.MainActivity
+ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:15:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Owner\.android\build-cache\c37c7b353d4102f9cb60da2770cdd0292357e91e\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Owner\.android\build-cache\fa612f3fa92c838552c49d23c39fbe6ee6fd692b\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Owner\.android\build-cache\22ffe0111c4520c80a4c3c9827f37ae2440f8880\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Owner\.android\build-cache\ad697fcdf4add01159e5785657c67d45b42f2e82\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Owner\.android\build-cache\74596b10de929628047dd7c7b47520d91f2ce1ee\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Owner\.android\build-cache\16f48d8e0f4c208acc3f98524f37c9087aec8451\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Owner\.android\build-cache\c07399c933b1e238f20c841c3eefa6c5d799d3b4\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Owner\.android\build-cache\4053e1a18524ff1eeade8b6b14d40604934a205f\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Owner\.android\build-cache\46123b74f284e6cb55067c7be119664eae1a2f2b\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Owner\.android\build-cache\37d17a2090f43e72126add8b5ee2c8efc963032b\output\AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Owner\.android\build-cache\c37c7b353d4102f9cb60da2770cdd0292357e91e\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Project\Android\Equalize\Equalizer\Eq\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Owner\.android\build-cache\c37c7b353d4102f9cb60da2770cdd0292357e91e\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Owner\.android\build-cache\fa612f3fa92c838552c49d23c39fbe6ee6fd692b\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Owner\.android\build-cache\22ffe0111c4520c80a4c3c9827f37ae2440f8880\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Owner\.android\build-cache\ad697fcdf4add01159e5785657c67d45b42f2e82\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Owner\.android\build-cache\74596b10de929628047dd7c7b47520d91f2ce1ee\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Owner\.android\build-cache\16f48d8e0f4c208acc3f98524f37c9087aec8451\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Owner\.android\build-cache\c07399c933b1e238f20c841c3eefa6c5d799d3b4\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Owner\.android\build-cache\4053e1a18524ff1eeade8b6b14d40604934a205f\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Owner\.android\build-cache\46123b74f284e6cb55067c7be119664eae1a2f2b\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Owner\.android\build-cache\c37c7b353d4102f9cb60da2770cdd0292357e91e\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Owner\.android\build-cache\c37c7b353d4102f9cb60da2770cdd0292357e91e\output\AndroidManifest.xml:26:9-47
