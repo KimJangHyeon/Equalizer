@@ -15,22 +15,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
-
-
-    private TextView mBandVal_1;
-    private TextView mBandVal_2;
-    private TextView mBandVal_3;
-    private TextView mBandVal_4;
-    private TextView mBandVal_5;
-
     static final String RECORDED_FILE = "sdcard/test.mp3";
 
     private MediaPlayer mPlayer = new MediaPlayer();
     int sessionId = mPlayer.getAudioSessionId();
     private Equalizer mEqualizer;
     int playbackPosition = 0;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,17 +49,17 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         mSeekbar_5.setOnSeekBarChangeListener(this);
         mSeekbar_5.setProgress(mEqualizer.getBandLevel((short) 4) + 1500);
 
-        mBandInfo_1 = (TextView)findViewById(R.id.bandInfo_1);
-        mBandInfo_2 = (TextView)findViewById(R.id.bandInfo_2);
-        mBandInfo_3 = (TextView)findViewById(R.id.bandInfo_3);
-        mBandInfo_4 = (TextView)findViewById(R.id.bandInfo_4);
-        mBandInfo_5 = (TextView)findViewById(R.id.bandInfo_5);
+        TextView mBandInfo_1 = (TextView)findViewById(R.id.bandInfo_1);
+        TextView mBandInfo_2 = (TextView)findViewById(R.id.bandInfo_2);
+        TextView mBandInfo_3 = (TextView)findViewById(R.id.bandInfo_3);
+        TextView mBandInfo_4 = (TextView)findViewById(R.id.bandInfo_4);
+        TextView mBandInfo_5 = (TextView)findViewById(R.id.bandInfo_5);
 
-        mBandVal_1 = (TextView)findViewById(R.id.bandVal_1);
-        mBandVal_2 = (TextView)findViewById(R.id.bandVal_2);
-        mBandVal_3 = (TextView)findViewById(R.id.bandVal_3);
-        mBandVal_4 = (TextView)findViewById(R.id.bandVal_4);
-        mBandVal_5 = (TextView)findViewById(R.id.bandVal_5);
+        TextView mBandVal_1 = (TextView)findViewById(R.id.bandVal_1);
+        TextView mBandVal_2 = (TextView)findViewById(R.id.bandVal_2);
+        TextView mBandVal_3 = (TextView)findViewById(R.id.bandVal_3);
+        TextView mBandVal_4 = (TextView)findViewById(R.id.bandVal_4);
+        TextView mBandVal_5 = (TextView)findViewById(R.id.bandVal_5);
 
         try {
             mEqualizer = null;
