@@ -15,17 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
-    private SeekBar mSeekbar_1;
-    private SeekBar mSeekbar_2;
-    private SeekBar mSeekbar_3;
-    private SeekBar mSeekbar_4;
-    private SeekBar mSeekbar_5;
 
-    private TextView mBandInfo_1;
-    private TextView mBandInfo_2;
-    private TextView mBandInfo_3;
-    private TextView mBandInfo_4;
-    private TextView mBandInfo_5;
 
     private TextView mBandVal_1;
     private TextView mBandVal_2;
@@ -33,8 +23,6 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
     private TextView mBandVal_4;
     private TextView mBandVal_5;
 
-    private Button buttonPlay;
-    private Button buttonStop;
     static final String RECORDED_FILE = "sdcard/test.mp3";
 
     private MediaPlayer mPlayer = new MediaPlayer();
@@ -48,22 +36,26 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonPlay = (Button) findViewById(R.id.play);
-        buttonStop = (Button) findViewById(R.id.stop);
+        Button buttonPlay = (Button) findViewById(R.id.play);
+        Button buttonStop = (Button) findViewById(R.id.stop);
 
-        mSeekbar_1 = (SeekBar)findViewById(R.id.seekBar_1);
+        Seekbar mSeekbar_1 = (SeekBar)findViewById(R.id.seekBar_1);
         mSeekbar_1.setOnSeekBarChangeListener(this);
         mSeekbar_1.setProgress(mEqualizer.getBandLevel((short) 0) + 1500);
-        mSeekbar_2 = (SeekBar)findViewById(R.id.seekBar_2);
+
+        Seekbar mSeekbar_2 = (SeekBar)findViewById(R.id.seekBar_2);
         mSeekbar_2.setOnSeekBarChangeListener(this);
         mSeekbar_2.setProgress(mEqualizer.getBandLevel((short) 1) + 1500);
-        mSeekbar_3 = (SeekBar)findViewById(R.id.seekBar_3);
+
+        Seekbar mSeekbar_3 = (SeekBar)findViewById(R.id.seekBar_3);
         mSeekbar_3.setOnSeekBarChangeListener(this);
         mSeekbar_3.setProgress(mEqualizer.getBandLevel((short) 2) + 1500);
-        mSeekbar_4 = (SeekBar)findViewById(R.id.seekBar_4);
+
+        Seekbar mSeekbar_4 = (SeekBar)findViewById(R.id.seekBar_4);
         mSeekbar_4.setOnSeekBarChangeListener(this);
         mSeekbar_4.setProgress(mEqualizer.getBandLevel((short) 3) + 1500);
-        mSeekbar_5 = (SeekBar)findViewById(R.id.seekBar_5);
+
+        Seekbar mSeekbar_5 = (SeekBar)findViewById(R.id.seekBar_5);
         mSeekbar_5.setOnSeekBarChangeListener(this);
         mSeekbar_5.setProgress(mEqualizer.getBandLevel((short) 4) + 1500);
 
