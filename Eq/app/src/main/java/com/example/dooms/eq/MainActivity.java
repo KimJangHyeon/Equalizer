@@ -59,6 +59,27 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         } catch (UnsupportedOperationException e) {
             e.printStackTrace();
         }
+
+        mSeekbar_1 = (SeekBar)findViewById(R.id.seekBar_1);
+        mSeekbar_1.setOnSeekBarChangeListener(this);
+        mSeekbar_1.setProgress(mEqualizer.getBandLevel((short) 0) + 1500);
+        mSeekbar_2 = (SeekBar)findViewById(R.id.seekBar_2);
+        mSeekbar_2.setOnSeekBarChangeListener(this);
+        mSeekbar_2.setProgress(mEqualizer.getBandLevel((short) 1) + 1500);
+        mSeekbar_3 = (SeekBar)findViewById(R.id.seekBar_3);
+        mSeekbar_3.setOnSeekBarChangeListener(this);
+        mSeekbar_3.setProgress(mEqualizer.getBandLevel((short) 2) + 1500);
+        mSeekbar_4 = (SeekBar)findViewById(R.id.seekBar_4);
+        mSeekbar_4.setOnSeekBarChangeListener(this);
+        mSeekbar_4.setProgress(mEqualizer.getBandLevel((short) 3) + 1500);
+        mSeekbar_5 = (SeekBar)findViewById(R.id.seekBar_5);
+        mSeekbar_5.setOnSeekBarChangeListener(this);
+        mSeekbar_5.setProgress(mEqualizer.getBandLevel((short) 4) + 1500);
+
+
+
+        
+
         mSeekbar_1 = (SeekBar)findViewById(R.id.seekBar_1);
         mSeekbar_1.setProgress(mEqualizer.getBandLevel((short) 0) + 1500);
         mSeekbar_2 = (SeekBar)findViewById(R.id.seekBar_2);
@@ -224,16 +245,7 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
 
     //    ===================================================================================
 
-    mSeekbar_1 = (SeekBar)findViewById(R.id.seekBar_1);
-    mSeekbar_1.setOnSeekBarChangeListener(this);
-    mSeekbar_2 = (SeekBar)findViewById(R.id.seekBar_2);
-    mSeekbar_2.setOnSeekBarChangeListener(this);
-    mSeekbar_3 = (SeekBar)findViewById(R.id.seekBar_3);
-    mSeekbar_3.setOnSeekBarChangeListener(this);
-    mSeekbar_4 = (SeekBar)findViewById(R.id.seekBar_4);
-    mSeekbar_4.setOnSeekBarChangeListener(this);
-    mSeekbar_5 = (SeekBar)findViewById(R.id.seekBar_5);
-    mSeekbar_5.setOnSeekBarChangeListener(this);
+
 
 
 
